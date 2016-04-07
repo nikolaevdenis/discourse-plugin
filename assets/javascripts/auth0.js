@@ -30,7 +30,7 @@
 
     }, 300);
   });
-  
+
   var LoginController = require('discourse/controllers/login').default;
   LoginController.reopen({
     authenticationComplete: function () {
@@ -40,7 +40,7 @@
       return this._super.apply(this, arguments);
     }
   });
-  
+
   var ApplicationRoute = require('discourse/routes/application').default;
   ApplicationRoute.reopen({
     actions: {
@@ -52,7 +52,8 @@
         lock.show({
           popup:        true,
           responseType: 'code',
-          callbackURL:  Discourse.SiteSettings.auth0_callback_url
+          callbackURL:  Discourse.SiteSettings.auth0_callback_url,
+          icon: 'http://www.emlid.com/wp-content/uploads/2015/03/emlid_logo_no_text.png'
         });
 
         this.controllerFor('login').resetForm();
@@ -76,7 +77,8 @@
             mode:         'signup',
             popup:        true,
             responseType: 'code',
-            callbackURL:  Discourse.SiteSettings.auth0_callback_url
+            callbackURL:  Discourse.SiteSettings.auth0_callback_url,
+            icon: 'http://www.emlid.com/wp-content/uploads/2015/03/emlid_logo_no_text.png'
           });
         }
       }
