@@ -53,7 +53,7 @@
           popup:        true,
           responseType: 'code',
           callbackURL:  Discourse.SiteSettings.auth0_callback_url,
-          icon: 'http://www.emlid.com/wp-content/uploads/2015/03/emlid_logo_no_text.png'
+          icon: 'https://community.emlid.com/uploads/default/original/2X/a/a36b0dc9f1dcf9c3946c395db67f9685ced017ba.png'
         });
 
         this.controllerFor('login').resetForm();
@@ -78,7 +78,7 @@
             popup:        true,
             responseType: 'code',
             callbackURL:  Discourse.SiteSettings.auth0_callback_url,
-            icon: 'http://www.emlid.com/wp-content/uploads/2015/03/emlid_logo_no_text.png'
+            icon: 'https://community.emlid.com/uploads/default/original/2X/a/a36b0dc9f1dcf9c3946c395db67f9685ced017ba.png'
           });
         }
       }
